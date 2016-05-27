@@ -17,20 +17,37 @@ namespace COMP123_S2016_Lesson3
          * The main method for our driver class Program
          *
          * @method Main
-         * @param {strinf[]} args
+         * @param {string[]} args
          */
         public static void Main(string[] args)
         {
             // Create a new instance of the Person class
-            Person person = new Person("Aslan");
 
-            Console.WriteLine(person.Name);
+            Person tanya = new Person();
+            tanya.Name = "Tanya";
+            tanya.Age = 28;
+            tanya.SaysHello();
+            tanya.ShowAge();
 
-            // Set a value in the Name property of the Person class
-            //person.Name = "Aslan";
+            Console.WriteLine();
 
-            // Get the Name value and print to console
-            Console.WriteLine(person.Name);
+            Person aslan = new Person("Aslan");
+            aslan.Age = 19;
+            aslan.SaysHello();
+            aslan.ShowAge();
+
+            Console.WriteLine();
+
+            Person mark = new Person(30);
+            mark.Name = "Mark";
+            mark.SaysHello();
+            mark.ShowAge();
+
+            Console.WriteLine();
+
+            Person mary = new Person("Mary", 23);
+            mary.SaysHello();
+            mary.ShowAge();
 
         }
     }
