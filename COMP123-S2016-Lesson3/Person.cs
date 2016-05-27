@@ -13,9 +13,9 @@ namespace COMP123_S2016_Lesson3
      * @field _name {string}
      */
     public class Person
-    {       
+    {
         //----------------------------------------------------------------------------------------------
-        // -------------------------PRIVATE INSTANCE VARIABLES------------------------------------------
+        //--------------------------PRIVATE INSTANCE VARIABLES------------------------------------------
         //----------------------------------------------------------------------------------------------
 
         private string _name;
@@ -23,7 +23,7 @@ namespace COMP123_S2016_Lesson3
 
 
         //----------------------------------------------------------------------------------------------
-        // ----------------------------PUBLIC PROPERTIES------------------------------------------------
+        //-----------------------------PUBLIC PROPERTIES------------------------------------------------
         //----------------------------------------------------------------------------------------------
 
         /**
@@ -32,14 +32,8 @@ namespace COMP123_S2016_Lesson3
          */
         public string Name
         {
-            get
-            {
-                return this._name;
-            }
-            set
-            {             
-                this._name = value;
-            }
+            get { return this._name; }
+            set { this._name = value; }
         }
 
 
@@ -52,22 +46,15 @@ namespace COMP123_S2016_Lesson3
         */
         public int Age
         {
-            get
-            {
-                return this._age;
-            }
-
-            set
-            {
-                this._age = value;
-            }
+            get { return this._age; }
+            set { this._age = value; }
         }
 
 
         //----------------------------------------------------------------------------------------------
-        // -----------------------------------CONSTRUCTORS----------------------------------------------
+        //------------------------------------CONSTRUCTORS----------------------------------------------
         //----------------------------------------------------------------------------------------------
-        
+
         /**
          * <summary>
          *This is default empty constructor for the Person class
@@ -76,21 +63,20 @@ namespace COMP123_S2016_Lesson3
          * 
          * @constructor Person
         */
-
         public Person()
         {
             // Initialize public properties
             this.Name = "unknown name";
             this._age = 0;
-          
+
         }
 
 
 
-
         /**
-        * This is the constructor that takes name as a parameter and passes 
+        * <summary>This is the constructor that takes name as a parameter and passes 
         * it to the _name private instance variable
+        * </summary>
         * 
         * @constructor Person
         * @param {string} name
@@ -100,9 +86,6 @@ namespace COMP123_S2016_Lesson3
             this.Name = name;
             this.Age = 0;
         }
-
-
-
 
 
         /**
@@ -139,8 +122,9 @@ namespace COMP123_S2016_Lesson3
             this.Age = age;
         }
 
+
         //----------------------------------------------------------------------------------------------
-        // -----------------------------------METHODS---------------------------------------------------
+        //-----------------------------------METHODS----------------------------------------------------
         //----------------------------------------------------------------------------------------------
 
         /**
@@ -153,7 +137,7 @@ namespace COMP123_S2016_Lesson3
         */
         public void SaysHello()
         {
-            Console.WriteLine(this.Name+" "+" says hello!!1");
+            Console.WriteLine(this.Name + " " + " says hello!!1");
         }
 
 
@@ -168,7 +152,7 @@ namespace COMP123_S2016_Lesson3
         */
         public void ShowAge()
         {
-            Console.WriteLine(this.Name+" is "+this.Age+" years old");
+            Console.WriteLine(this.Name + " is " + this.Age + " years old");
         }
     }
 }
