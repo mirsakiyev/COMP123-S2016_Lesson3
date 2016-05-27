@@ -62,42 +62,42 @@ namespace COMP123_S2016_Lesson3
             string separator = "-------------------------------------";
 
             //----------------------------------------------------------------------------------------------
-            //----------------Create a new instance(jane) of the Person class-------------------------------
+            //----------------Create a new instance(rick) of the Person class-------------------------------
             //----------------------------------------------------------------------------------------------
-            Person jane = new Person();
-            jane.Name = "Jane";
-            jane.Age = 21;
-            jane.SaysHello();
-            jane.ShowAge();
+            Person rick = new Person();
+            rick.Name = "Rick";
+            rick.Age = 40;
+            rick.SaysHello();
+            rick.ShowAge();
 
             Console.WriteLine(separator);
 
             //----------------------------------------------------------------------------------------------
-            //----------------Create a new instance(aslan) of the Person class------------------------------
+            //----------------Create a new instance(daryl) of the Person class------------------------------
             //----------------------------------------------------------------------------------------------
-            Person aslan = new Person("Aslan");
-            aslan.Age = 19;
-            aslan.SaysHello();
-            aslan.ShowAge();
+            Person daryl = new Person("Daryl");
+            daryl.Age = 39;
+            daryl.SaysHello();
+            daryl.ShowAge();
 
             Console.WriteLine(separator);
 
             //----------------------------------------------------------------------------------------------
-            //----------------Create a new instance(josh) of the Person class-------------------------------
+            //----------------Create a new instance(carl) of the Person class-------------------------------
             //----------------------------------------------------------------------------------------------
-            Person josh = new Person(20);
-            josh.Name = "Josh";
-            josh.SaysHello();
-            josh.ShowAge();
+            Person carl = new Person(16);
+            carl.Name = "Carl";
+            carl.SaysHello();
+            carl.ShowAge();
 
             Console.WriteLine(separator);
 
             //----------------------------------------------------------------------------------------------
-            //----------------Create a new instance(morgan) of the Person class-----------------------------
+            //----------------Create a new instance(negan) of the Person class------------------------------
             //----------------------------------------------------------------------------------------------
-            Person morgan = new Person("Morgan", 22);
-            morgan.SaysHello();
-            morgan.ShowAge();
+            Person negan = new Person("Negan", 41);
+            negan.SaysHello();
+            negan.ShowAge();
 
             Console.WriteLine(separator);
 
